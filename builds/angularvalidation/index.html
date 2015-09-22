@@ -19,32 +19,32 @@
     novalidate>
 
     <div class="textintro">
-      <h1>My form</h1>
+      <h1>Angular Validation</h1>
       <p>Fill out the following form</p>
     </div>
     <p class="error formerror" ng-show="message">{{ message }}</p>
 
     <fieldset>
       <input type="firstname" name="firstname" placeholder="First Name"
-        ng-model="user.firstname" required="true">
+        ng-model="user.firstname" ng-required="true">
       <p class="error validationerror"
         ng-show="myform.firstname.$invalid && myform.firstname.$touched">
         First Name is required</p>
 
       <input type="lastname" name="lastname" placeholder="Last Name"
-        ng-model="user.lastname" required="true">
+        ng-model="user.lastname" ng-required="true">
       <p class="error validationerror"
         ng-show="myform.lastname.$invalid && myform.lastname.$touched">
         Last Name is required</p>
 
       <input type="email" name="email" placeholder="Email"
-        ng-model="user.email" required="true">
+        ng-model="user.email" ng-required="true">
       <p class="error validationerror"
         ng-show="myform.email.$invalid && myform.email.$touched">
         Must be a valid email</p>
 
       <input type="password" name="password" placeholder="Password"
-        ng-model="user.password" required="true">
+        ng-model="user.password" ng-required="true">
       <p class="error validationerror"
         ng-show="myform.password.$invalid && myform.password.$touched">
         password is required</p>
