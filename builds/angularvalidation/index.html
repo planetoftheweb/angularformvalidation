@@ -11,20 +11,24 @@
 <body>
 <div class="page">
   <section class="card register" ng-app>
-  <form name="myform">
+  <form name="myform"
+    novalidate>
 
     <div class="textintro">
       <h1>Form Validation</h1>
       <p>Please fill out the following form</p>
-      {{ message }}
+      <p ng-show="myform.firstname.$invalid">You must fill out your first name.</p>
     </div>
 
     <fieldset>
       <input type="firstname" name="firstname" placeholder="First Name"
-      ng-model="message">
-      <input type="lastname" name="lastname" placeholder="Last Name">
-      <input type="email" name="email" placeholder="Email">
-      <input type="password" name="password" placeholder="Password">
+      ng-model="user.firstname" ng-required="true">
+      <input type="lastname" name="lastname" placeholder="Last Name"
+      ng-model="user.lastname">
+      <input type="email" name="email" placeholder="Email"
+      ng-model="user.email">
+      <input type="password" name="password" placeholder="Password"
+      ng-model="user.password">
     </fieldset>
 
     <button type="submit" class="btn">Submit</button>
