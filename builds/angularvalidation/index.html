@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/app.js"></script>
 </head>
 <body>
 <div class="page">
-  <section class="card register" ng-app>
+  <section class="card register" ng-app="myApp"
+    ng-controller="RegistrationController">
   <form name="myform"
+    ng-submit="register()"
     novalidate>
 
     <div class="textintro">
       <h1>Form Validation</h1>
       <p>Please fill out the following form</p>
+      <p ng-show="message">{{ message }}</p>
     </div>
 
     <fieldset>
