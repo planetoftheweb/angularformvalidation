@@ -193,18 +193,6 @@ input[type=radio] {
   overflow: hidden;
 }
 
-.error {
-  color: red;
-  padding-top: 5px;
-}
-
-/*buttons*/
-.ng-invalid .btn {
-  background: gray;
-}
-
-/* Buttons */
-
 .btn {
     display: inline-block;
     padding: 12px 24px;
