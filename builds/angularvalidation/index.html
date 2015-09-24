@@ -6,20 +6,24 @@
   <meta name="viewport" content="width=device-width, user-scalable=no">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,100,700,900" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/lib/angular/angular.min.js"></script>
 </head>
 <body>
 <div class="page">
-  <section class="card register">
+  <section class="card register" ng-app>
   <form name="myform">
 
     <div class="textintro">
       <h1>Form Validation</h1>
       <p>Please fill out the following form</p>
+      <p>{{ message }}</p>
     </div>
 
     <fieldset>
       <input type="text" name="firstname" 
-        placeholder="First Name">
+        placeholder="First Name"
+        ng-model="message">
       <input type="text" name="lastname"
         placeholder="Last Name">
       <input type="email" name="email"
