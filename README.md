@@ -1,7 +1,18 @@
 # Angular JS: Form Validation
-![Angular JS: Form Validation](hero.png)
+[![AngularJS: Form Validation](hero.png)](http://www.lynda.com/AngularJS-tutorials/AngularJS-Form-Validation/438886-2.html)
+
 This is the repository for my course, [AngularJS: Form Validation](#). The full course is available at [lynda.com](http://lynda.com).
 - [My Personal Website](http://raybo.org)
+- [All my Lynda.com courses](http://lynda.com/ray)
+
+## Course Description
+Validation is key to successful online forms. Implementing dynamic form validation that reacts to input can be difficult to implement with languages like JavaScript and jQuery. However, AngularJS allows you to take advantage of two-way data-binding functionality without having to write any JavaScript code. This makes reacting to input from the user—as it happens—a breeze.
+
+In this short course, Ray Villalobos shows how to implement form validation on any HTML form using the built-in validation properties and methods in AngularJS. Together, you'll look at how AngularJS can help style forms dynamically as the user updates the content. Plus, explore how to implement validation with JavaScript, just in case you need more fine-tuned control of form interactions.
+
+## Instructions
+
+This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage. Or you can simply add /tree/BRANCH_NAME to the URL to go to the branch you want to peek at.
 
 1. Make sure you have these installed
 	- [node.js](http://nodejs.org/)
